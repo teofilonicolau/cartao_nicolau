@@ -1,0 +1,57 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    /* White text for 'REDES SOCIAIS' on dark bg */
+    margin-bottom: 1rem;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+.grid {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+}
+
+.iconButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #D4AF37;
+    /* Gold Border */
+    color: #D4AF37;
+    /* Gold Icon */
+    background: transparent;
+    /* Transparent BG to show dark card */
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.iconButton:hover {
+    transform: translateY(-3px);
+    background: #D4AF37;
+    /* Fill Gold on Hover */
+    color: #051024;
+    /* Dark Icon on Hover */
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+.iconButton svg {
+    width: 20px;
+    height: 20px;
+}

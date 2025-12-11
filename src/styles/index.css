@@ -1,0 +1,102 @@
+:root {
+  --primary: #051024;
+  /* Deep Navy Blue Background */
+  --highlight: #C5A028;
+  /* Gold */
+  --text-dark: #FFFFFF;
+  /* White text for dark bg */
+  --text-light: #9CA3AF;
+  /* Light gray for secondary text */
+  --white: #051024;
+  /* Redefine 'white' to bg color for seamless integration or keep white for specific elements? Better to use specific vars. */
+  --card-bg: #051024;
+  --gold-gradient: linear-gradient(180deg, #D4AF37 0%, #B38728 100%);
+  --gold-text: #D4AF37;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--primary);
+  color: var(--text-dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Utilities */
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  /* Dark BG */
+  min-height: 100vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}

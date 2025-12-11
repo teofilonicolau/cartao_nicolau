@@ -1,0 +1,102 @@
+.header {
+    position: relative;
+    width: 100%;
+    padding-bottom: 1rem;
+    background: var(--card-bg);
+    padding-top: 0;
+    /* Remove top padding to let logo hit the edge if needed, or keep small spacing */
+    transition: all 0.3s ease;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0;
+    /* Remove padding to allow full width */
+    width: 100%;
+}
+
+.logo {
+    width: 100%;
+    /* Full width */
+    height: auto;
+    object-fit: cover;
+    /* Changed to cover to fill area if image has aspect ratio issues, or contain if strictly logo */
+    display: block;
+}
+
+.profileWrapper {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.avatarContainer {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #D4AF37;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+    background: var(--card-bg);
+    margin-bottom: 1rem;
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.badge {
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    background: #D4AF37;
+    color: #051024;
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 4px 8px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid #051024;
+}
+
+.name {
+    margin: 0.5rem 0 0.25rem;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1.5px;
+    /* Bebas often needs a bit more spacing */
+    font-size: 2.2rem;
+    /* Bebas is condensed, so we usually bump the size up */
+    letter-spacing: 0.5px;
+}
+
+.role {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #D4AF37;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.slogan {
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: #9CA3AF;
+    font-style: italic;
+    text-align: center;
+    max-width: 90%;
+}
