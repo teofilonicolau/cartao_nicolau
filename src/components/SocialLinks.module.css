@@ -11,7 +11,7 @@
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #FFFFFF;
+    color: var(--text-dark);
     /* White text for 'REDES SOCIAIS' on dark bg */
     margin-bottom: 1rem;
     font-weight: 700;
@@ -31,9 +31,9 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    border: 2px solid #D4AF37;
+    border: 2px solid var(--highlight);
     /* Gold Border */
-    color: #D4AF37;
+    color: var(--highlight);
     /* Gold Icon */
     background: transparent;
     /* Transparent BG to show dark card */
@@ -44,11 +44,11 @@
 
 .iconButton:hover {
     transform: translateY(-3px);
-    background: #D4AF37;
+    background: var(--highlight);
     /* Fill Gold on Hover */
-    color: #051024;
+    color: var(--secondary);
     /* Dark Icon on Hover */
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+    box-shadow: 0 0 15px rgba(248, 176, 59, 0.4);
 }
 
 .iconButton svg {

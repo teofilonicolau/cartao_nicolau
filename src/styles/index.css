@@ -1,17 +1,19 @@
 :root {
-  --primary: #051024;
-  /* Deep Navy Blue Background */
-  --highlight: #C5A028;
-  /* Gold */
+  --primary: #141831;
+  /* Navy Blue - Principal */
+  --highlight: #F8B03B;
+  /* Gold - Destaque */
+  --secondary: #0f1225;
+  /* Dark - Secundária */
   --text-dark: #FFFFFF;
   /* White text for dark bg */
   --text-light: #9CA3AF;
   /* Light gray for secondary text */
-  --white: #051024;
-  /* Redefine 'white' to bg color for seamless integration or keep white for specific elements? Better to use specific vars. */
-  --card-bg: #051024;
-  --gold-gradient: linear-gradient(180deg, #D4AF37 0%, #B38728 100%);
-  --gold-text: #D4AF37;
+  --white: #ffffff;
+  --card-bg: #141831;
+  /* Match primary */
+  --gold-gradient: linear-gradient(180deg, #F8B03B 0%, #D4AF37 100%);
+  --gold-text: #F8B03B;
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
 }

@@ -1,6 +1,7 @@
 import { Header } from './components/Header';
 import { ContactActions } from './components/ContactActions';
 import { SocialLinks } from './components/SocialLinks';
+import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { rianData } from './data/Data';
 import './styles/index.css';
 
@@ -19,6 +20,7 @@ function App() {
                     <p>Todos os direitos reservados.</p>
                 </div>
             </main>
+            <FloatingWhatsApp phoneNumber={rianData.contact.whatsapp} />
         </div>
     );
 }

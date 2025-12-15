@@ -88,11 +88,11 @@
 
 /* Gold Gradient Buttons */
 .goldButton {
-    background: linear-gradient(180deg, #D4AF37 0%, #B38728 100%);
-    border: 1px solid #C5A028;
+    background: var(--highlight);
+    border: 1px solid var(--highlight);
     justify-content: center;
     gap: 0.75rem;
-    color: #1F2937;
+    color: var(--secondary);
 }
 
 /* Shine effect */
@@ -112,19 +112,19 @@
 }
 
 .goldButton:hover {
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    box-shadow: 0 0 20px rgba(248, 176, 59, 0.4);
     /* Gold glow */
 }
 
 .iconDark {
     font-size: 1.4rem;
-    color: #1F2937;
+    color: var(--secondary);
     display: flex;
     align-items: center;
 }
 
 .labelDark {
-    color: #1F2937;
+    color: var(--secondary);
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 0.5px;
