@@ -7,6 +7,8 @@ import { ShareModal } from './ShareModal';
 
 // SVG Components
 
+const SHARE_URL = "https://cartao-nicolau.vercel.app/";
+
 const DownloadIcon = () => (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -55,7 +57,7 @@ export const ContactActions: React.FC<ContactActionsProps> = ({ data }) => {
             <ShareModal
                 isOpen={showShare}
                 onClose={() => setShowShare(false)}
-                url={window.location.href}
+                url={SHARE_URL}
             />
         </div>
     );
