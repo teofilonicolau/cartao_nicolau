@@ -1,5 +1,5 @@
 import React from 'react';
-import { QRCodeSVG } from 'qrcode.react';
+import { QRCodeCanvas } from 'qrcode.react';
 import { X } from 'lucide-react';
 
 interface ShareModalProps {
@@ -83,7 +83,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, url }) 
                     borderRadius: '8px',
                     boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
                 }}>
-                    <QRCodeSVG
+                    <QRCodeCanvas
                         value={url}
                         size={256}
                         level="M"
