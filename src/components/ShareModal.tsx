@@ -91,6 +91,44 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, url }) 
                     />
                 </div>
 
+                {/* URL Display and Copy Button */}
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '0.5rem',
+                    width: '100%',
+                    alignItems: 'center'
+                }}>
+                    <p style={{
+                        fontSize: '0.8rem',
+                        color: '#666',
+                        margin: 0,
+                        wordBreak: 'break-all',
+                        textAlign: 'center'
+                    }}>
+                        {url}
+                    </p>
+                    <button
+                        onClick={() => {
+                            navigator.clipboard.writeText(url);
+                            alert('Link copiado!');
+                        }}
+                        style={{
+                            background: 'none',
+                            border: '1px solid #D4AF37',
+                            color: '#D4AF37',
+                            padding: '0.5rem 1rem',
+                            borderRadius: '8px',
+                            cursor: 'pointer',
+                            fontSize: '0.9rem',
+                            fontWeight: '600',
+                            width: '100%'
+                        }}
+                    >
+                        Copiar Link
+                    </button>
+                </div>
+
                 <button
                     onClick={onClose}
                     style={{
